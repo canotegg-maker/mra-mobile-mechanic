@@ -210,6 +210,20 @@ ul {
   margin-top: 1.25rem;
 }
 
+/* Make contact buttons more prominent */
+.contact .btn-primary,
+.contact .btn-secondary {
+  font-size: 1.05rem;
+  padding: 1rem 1.4rem;
+}
+
+/* Make the bottom "Text Us" button red like the primary call button */
+.contact .btn-secondary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+
 @media (max-width: 760px) {
   .hero {
     padding-top: 4rem;
