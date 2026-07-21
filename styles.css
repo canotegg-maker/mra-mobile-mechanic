@@ -73,7 +73,7 @@ body {
 .phone-large {
   color: #fff;
   font-weight: 900;
-  font-size: clamp(1.3rem, 3.6vw, 2.4rem);
+  font-size: clamp(1.6rem, 4.2vw, 3rem);
   text-decoration: none;
 }
 
@@ -92,7 +92,7 @@ body {
 
 @media (max-width: 720px) {
   .logo { max-width: 92%; }
-  .phone-large { font-size: 1.4rem; }
+  .phone-large { font-size: 1.6rem; }
   .top-contact { flex-direction: column; gap: 0.4rem; }
 }
 
