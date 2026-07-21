@@ -22,7 +22,7 @@ body {
 }
 
 .hero {
-  padding: 5rem 1.5rem 4rem;
+  padding: 3rem 1.5rem 2.5rem;
   background: linear-gradient(120deg, #000000 0%, #1a1a1a 100%);
   color: #fff;
 }
@@ -42,10 +42,10 @@ body {
 
 .logo {
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
   height: auto;
   display: block;
-  margin: 0 auto 0.6rem;
+  margin: 0 auto 0.4rem;
 }
 
 /* Make logo slightly smaller on narrow screens */
@@ -72,21 +72,28 @@ body {
 
 .phone-large {
   color: #fff;
-  font-weight: 800;
-  font-size: clamp(1.1rem, 2.6vw, 1.8rem);
+  font-weight: 900;
+  font-size: clamp(1.3rem, 3.6vw, 2.4rem);
   text-decoration: none;
 }
 
 .btn-text-top {
   background: var(--accent);
   color: #fff;
-  padding: 0.6rem 1rem;
+  padding: 0.7rem 1.2rem;
   border-radius: 999px;
-  font-weight: 800;
+  font-weight: 900;
+  font-size: 1rem;
 }
 
 @media (min-width: 900px) {
   .hero-content { max-width: 980px; }
+}
+
+@media (max-width: 720px) {
+  .logo { max-width: 92%; }
+  .phone-large { font-size: 1.4rem; }
+  .top-contact { flex-direction: column; gap: 0.4rem; }
 }
 
 .eyebrow {
