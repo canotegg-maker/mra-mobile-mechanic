@@ -42,7 +42,7 @@ body {
 
 .logo {
   width: 100%;
-  max-width: 480px;
+  max-width: 700px;
   height: auto;
   display: block;
   margin: 0 auto 0.6rem;
@@ -53,6 +53,40 @@ body {
   .logo {
     max-width: 90%;
   }
+}
+
+/* Top contact block next to logo */
+.logo-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.top-contact {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-large {
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(1.1rem, 2.6vw, 1.8rem);
+  text-decoration: none;
+}
+
+.btn-text-top {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+@media (min-width: 900px) {
+  .hero-content { max-width: 980px; }
 }
 
 .eyebrow {
