@@ -30,17 +30,29 @@ body {
 .hero-content {
   max-width: 780px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .logo-wrap {
   margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
   width: 100%;
-  max-width: 320px;
+  max-width: 480px;
   height: auto;
   display: block;
+  margin: 0 auto 0.6rem;
+}
+
+/* Make logo slightly smaller on narrow screens */
+@media (max-width: 480px) {
+  .logo {
+    max-width: 90%;
+  }
 }
 
 .eyebrow {
