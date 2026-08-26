@@ -282,6 +282,37 @@ ul {
   color: var(--text);
 }
 
+.booking {
+  padding-top: 1rem;
+}
+
+.booking-box {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.8rem;
+  background: #fff5f6;
+  border: 1px solid #ffd7dc;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.booking-box p,
+.booking-box li,
+.terms-line {
+  color: var(--muted);
+}
+
+.booking-list {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.terms-line {
+  margin-top: 1.25rem;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
 .contact {
   text-align: center;
   padding-bottom: 4rem;
@@ -329,7 +360,8 @@ ul {
 }
 
 .pricing-flyer {
-  max-width: 860px;
+  width: 100%;
+  max-width: 1040px;
   margin: 0 auto;
   overflow: hidden;
   border: 1px solid #202020;
@@ -342,4 +374,12 @@ ul {
   display: block;
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 760px) {
+  .pricing-flyer {
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
 }
