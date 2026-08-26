@@ -1,12 +1,12 @@
 :root {
-  color-scheme: light;
-  --bg: #f3f4f6;
-  --surface: #ffffff;
-  --text: #111111;
-  --muted: #4d4d4d;
+  color-scheme: dark;
+  --bg: #080d14;
+  --surface: rgba(18, 27, 39, 0.94);
+  --text: #f4f8ff;
+  --muted: #b5c0ce;
   --accent: #d7263d;
   --accent-dark: #a61c2d;
-  --border: #e5e7eb;
+  --border: #263b52;
 }
 
 * {
@@ -16,14 +16,25 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #ffffff 0%, var(--bg) 100%);
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(110deg, transparent 0 38%, rgba(255, 255, 255, 0.07) 45%, transparent 52%),
+    linear-gradient(72deg, transparent 0 53%, rgba(240, 35, 72, 0.2) 60%, transparent 68%),
+    radial-gradient(circle at 82% 8%, rgba(255, 255, 255, 0.1), transparent 34%),
+    radial-gradient(circle at 12% 78%, rgba(215, 38, 61, 0.24), transparent 30%),
+    radial-gradient(circle at 58% 42%, rgba(215, 38, 61, 0.08), transparent 24%);
   color: var(--text);
   line-height: 1.6;
 }
 
 .hero {
   padding: 0.45rem 1.1rem 0.5rem;
-  background: linear-gradient(120deg, #000000 0%, #1a1a1a 100%);
+  background:
+    linear-gradient(110deg, rgba(255, 255, 255, 0.1), transparent 42%),
+    linear-gradient(72deg, transparent 0 54%, rgba(240, 35, 72, 0.32)),
+    radial-gradient(circle at 50% 0, rgba(215, 38, 61, 0.2), transparent 34%),
+    #05080d;
+  border-bottom: 1px solid rgba(215, 38, 61, 0.55);
   color: #fff;
 }
 
@@ -102,7 +113,7 @@ body {
   font-size: 0.82rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
-  color: #ff6b6b;
+  color: #ff9c68;
 }
 
 .hero h1 {
@@ -189,7 +200,7 @@ body {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28), 0 0 24px rgba(0, 136, 255, 0.06);
 }
 
 .stats div {
@@ -271,10 +282,21 @@ body {
   align-items: center;
 }
 
+.brand-quote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--accent);
+  color: #fff;
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.45;
+  background: rgba(215, 38, 61, 0.1);
+}
+
 .panel {
   padding: 1.5rem;
-  background: #fff5f6;
-  border-color: #ffd7dc;
+  background: rgba(25, 29, 35, 0.96);
+  border-color: #5c3540;
 }
 
 ul {
@@ -290,8 +312,8 @@ ul {
   max-width: 860px;
   margin: 0 auto;
   padding: 1.8rem;
-  background: #fff5f6;
-  border: 1px solid #ffd7dc;
+  background: rgba(25, 29, 35, 0.96);
+  border: 1px solid #5c3540;
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
