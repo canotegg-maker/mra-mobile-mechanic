@@ -257,6 +257,18 @@ body {
   padding: 1.3rem;
 }
 
+.card-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: var(--accent-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
 .card p,
 .highlight-copy p,
 .contact p,
