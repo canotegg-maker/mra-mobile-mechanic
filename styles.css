@@ -45,7 +45,7 @@ body {
 
 .logo {
   width: 100%;
-  max-width: 340px;
+  max-width: 420px;
   height: auto;
   display: block;
   margin: 0;
@@ -588,7 +588,7 @@ ul {
 
   .logo {
     width: 100%;
-    max-width: 240px;
+    max-width: 280px;
   }
 
   .logo-wrap {
